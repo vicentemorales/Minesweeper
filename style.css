@@ -1,9 +1,54 @@
 body{
-    text-align: center;
+    margin: 0;
     background: rgb(5, 141, 5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 header{
     color: azure;
+    margin-bottom: 10px;
 }
 
+input{
+    color: rgba(128, 128, 128, 0.425);
+}
+
+.gameBoard{
+    display: inline-grid;
+    padding: 10px;
+    grid-template-columns: repeat(var(--size), 60px);
+    grid-template-rows: repeat(var(--size), 60px);
+    gap: 4px;
+    background-color: grey;
+}
+
+.gameBoard > * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid grey;
+    user-select: none;
+}
+
+
+.gameBoard > [data-status = 'hidden']{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.gameBoard > [data-status = 'mine']{
+    background-color: rgba(185, 1, 1, 0.733);
+}
+
+.gameBoard > [data-status = 'number']{
+    background-color: none;
+}
+
+.gameBoard > [data-status = 'marked']{
+    background-color: rgb(243, 243, 50);
+}
