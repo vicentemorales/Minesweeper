@@ -28,6 +28,9 @@ JS
     Dictate how many values are empty, numbers, and mines?
     Can we code something for this to be based on values inputed at the start screen?
         input box values from HTML (have default  && what the user inputs)
+    Need to be able to recognized the boundary to avoid checking for mines in those spots.
+    change the text content of the mine counter based on how many have been marked.
+        
 - Add event listener based on the values in the tiles
     right click: marker
     Left click : test tile
