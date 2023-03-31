@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" type = "module"></script>
-    <script src="minesweeper.js" type = "module"></script>
-    <title>JS - Minesweeper</title>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <script src="app.js" charset="utf-8"></script>
+  
 </head>
 <body>
-    <header>
-        <h1>Minesweeper</h1>
-        <input type="text" value="# of Mines: 10">
-    </header>
 
-    <main>
-        <div class="gameBoard"></div>
-    </main>
+  <div class="container">
+    <div><h1>MINE-TRACER</h1></div>
+    <div><h2>Find all the mines to win.</h2></div>
+    <div><p>If you don't, it was nice knowing ya.</p></div>
+    <div class="grid"></div>
+    <div>Flags left: <span id='flags-left'></span></div>
+    <div id="result"></div>
+  </div>
 
-    <section>
-        Mines left: 10
-    </section>
-
-
-    
 </body>
 </html>
