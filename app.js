@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         result.innerHTML = 'YOU WIN!'
         isGameOver = true
 
-        for (let x = 0; x<800; x++) {
+        for (let x = 0; x<900; x++) {
           setInterval(animateWin(x), 1)
           
         }
