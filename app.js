@@ -236,7 +236,51 @@ document.addEventListener('DOMContentLoaded', () => {
       if (matches === bombAmount) {
         result.innerHTML = 'YOU WIN!'
         isGameOver = true
+
+        for (let x = 0; x<800; x++) {
+          setInterval(animateWin(x), 1)
+          
+        }
+        
+
+
       }
     }
   }
+
+  const tank = document.querySelector('.tankTest');
+  const container = document.querySelector('.container');
+  const containerWidth = container.clientWidth;
+  const tankWidth = tank.clientWidth;
+  const distance = containerWidth / 4;
+  const duration = 6000; // adjust the duration as desired
+
+  let startTime = null;
+  let currentPosition = -30;
+
+  function animate(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsedTime = timestamp - startTime;
+    currentPosition = -30 + (elapsedTime / duration) * distance;
+    if (currentPosition <= distance) {
+      tank.style.left = currentPosition-150 + 'px';
+      requestAnimationFrame(animate);
+    }
+  }
+
+requestAnimationFrame(animate);
+
+
+
+function animateWin(x){
+  if (isGameOver = true) {
+}
+tank.style.left =currentPosition - 150 + x + 'px'
+ 
+}
+
 })
+
+
+
+

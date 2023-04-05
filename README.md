@@ -36,3 +36,11 @@ JS
     Left click : test tile
     check for result after each left click (win or lose)
 - Add way to transition from pages (start -> field -> win||lose -> highscore)
+
+
+Credit:
+
+Guide for game logic:
+https://www.youtube.com/watch?v=W0No1JDc6vE
+
+assets were created by me.
