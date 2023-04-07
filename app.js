@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   const flagsLeft = document.querySelector('#flags-left')
   const result = document.querySelector('#result')
+  const fire = document.querySelector('#flame');
   let width = 10
   let bombAmount = 20
   let flags = 0
@@ -211,8 +212,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //game over
   function gameOver(square) {
-    result.innerHTML = 'BOOM! Game Over!'
+    result.innerHTML = 'Good job, loser! Game Over!'
     isGameOver = true
+
+    //FIRE
+          fire.style.display = 'flex';
+
 
     //show ALL the bombs
     squares.forEach(square => {
@@ -234,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         matches ++
       }
       if (matches === bombAmount) {
-        result.innerHTML = 'YOU WIN!'
+        result.innerHTML = 'I totally had faith in you. YOU WIN!'
         isGameOver = true
 
         for (let x = 0; x<900; x++) {

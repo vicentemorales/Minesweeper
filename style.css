@@ -9,6 +9,18 @@ body{
     text-align: center;
 }
 
+.tankTest{
+ width: 200px;
+}
+
+#flame{
+    position: absolute;
+    z-index: 2;
+    transform: translateY(125px);
+    padding-left: 200px;
+    display: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -39,7 +51,7 @@ body{
 }
 
 .bomb{
-    background-color: red;
+    background-color:none;
     
 }
 
@@ -56,5 +68,35 @@ body{
     left: 10%;
     top: 50%;
     transform: translateY(-100%);
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid #000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    cursor: pointer;
   }
   

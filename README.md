@@ -43,4 +43,7 @@ Credit:
 Guide for game logic:
 https://www.youtube.com/watch?v=W0No1JDc6vE
 
-assets were created by me.
+Tank:
+https://opengameart.org/content/2d-t34
+
+
